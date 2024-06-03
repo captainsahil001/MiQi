@@ -1,0 +1,53 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.miqi'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.miqi"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.firebase.crashlytics.buildtools
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation(libs.generativeai)
+    implementation(libs.guava)
+    implementation 'com.google.guava:guava:31.0.1-android'
+    implementation "com.google.guava:guava:31.0.1-android"
+
+    // To use CallbackToFutureAdapter
+    implementation "androidx.concurrent:concurrent-futures:1.1.0"
+
+    // Kotlin
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.6.0"
+    implementation(libs.reactive.streams)
+}

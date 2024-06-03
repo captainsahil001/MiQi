@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="730dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/header"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="-10sp"
+            android:layout_marginRight="30sp"
+            android:background="#3E82F310"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/prompt"
+            android:inputType="textMultiLine"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:backgroundTint="#AE89CD1A"
+            android:gravity="center"
+            android:text="@string/button"
+            android:textColor="#EBFFD6" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="47dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="30sp"
+                android:background="#3E82F310"
+                android:hint="@string/result"
+                android:textSize="20sp" />
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

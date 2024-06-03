@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiQi</string>
+    <string name="header">MiQi</string>
+    <string name="prompt">Enter your query</string>
+    <string name="button">Submit</string>
+    <string name="result">Suggestions</string>
+</resources>
