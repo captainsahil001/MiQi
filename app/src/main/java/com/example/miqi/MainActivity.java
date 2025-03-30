@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
             // The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts
             GenerativeModel gm = new GenerativeModel(
-                    /* modelName */ "gemini-1.5-flash",
-                    /* apiKey */ "AIzaSyAXu9VTIVYOVLlYNxQ2nwVshYYlT97dL9A" // Ensure BuildConfig.API_KEY is correctly configured
+                    /* modelName */ "gemini-2.0-flash",
+                    /* apiKey */ "AIzaSyBLl7IwEWBtAInBAFgx0ucMv5UWkh2_tco" // Ensure BuildConfig.API_KEY is correctly configured
             );
 
             GenerativeModelFutures model = GenerativeModelFutures.from(gm);
